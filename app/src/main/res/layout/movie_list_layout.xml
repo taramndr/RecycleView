@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listbg"
+                    android:padding="15dp"
+                   >
+
+                    <ImageView
+                        android:id="@+id/poster_image1"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="Property Image"
+                        android:src="@drawable/imperium2"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/infoSection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/poster_image1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movie_title1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="Imperium"
+                            android:textSize="18sp"
+                            android:textColor= "@color/blue"/>
+
+                        <TextView
+                            android:id="@+id/movie_category1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Action, Thriller"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/description1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Description Description Desc ription Description"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pricingSection1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infoSection1"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/time1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="2hr 30 min" />
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time1"
+                            android:layout_marginRight="15dp"
+                            android:text="Price: " />
+
+                        <TextView
+                            android:id="@+id/movie_by1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time1"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/price1"
+                            android:text="By:" />
+
+                        <TextView
+                            android:id="@+id/rating1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time1"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/movie_by1"
+                            android:text="Rating:" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/movielistitem">
+
+                <ImageView
+                        android:id="@+id/poster_image2"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="Property Image"
+                        android:src="@drawable/lusy2"/>
+
+                    <LinearLayout
+                        android:id="@+id/infoSection2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/poster_image2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movie_title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="Lucy"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/movie_category2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Innovation, Action"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/description2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Description Description Desc ription DescriptionDescription"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pricingSection2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infoSection2">
+
+                        <TextView
+                            android:id="@+id/time2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="2hr 30 min" />
+
+                        <TextView
+                            android:id="@+id/price2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time2"
+                            android:layout_marginRight="15dp"
+                            android:text="Price: " />
+
+                        <TextView
+                            android:id="@+id/movie_by2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time2"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/price2"
+                            android:text="By:" />
+
+                        <TextView
+                            android:id="@+id/rating2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time2"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/movie_by2"
+                            android:text="Rating:" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/movielistitem">
+
+                    <ImageView
+                        android:id="@+id/poster_image3"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="Property Image"
+                        android:src="@drawable/whiplash2"
+                        android:background="#000000"/>
+
+                    <LinearLayout
+                        android:id="@+id/infoSection3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/poster_image3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movie_title3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="Whip Lash"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/movie_category3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="Music, Drama"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/description3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Description Description Desc Description Description"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pricingSection3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infoSection3">
+
+                        <TextView
+                            android:id="@+id/time3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="2hr 30 min" />
+
+                        <TextView
+                            android:id="@+id/price3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time3"
+                            android:layout_marginRight="15dp"
+                            android:text="Price: " />
+
+                        <TextView
+                            android:id="@+id/movie_by3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time3"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/price3"
+                            android:text="By:" />
+
+                        <TextView
+                            android:id="@+id/rating3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time3"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/movie_by3"
+                            android:text="Rating:" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/movielistitem">
+
+                    <ImageView
+                        android:id="@+id/poster_image4"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="Property Image"
+                        android:src="@drawable/illlusionist2"
+                        android:background="#000000"/>
+
+                    <LinearLayout
+                        android:id="@+id/infoSection4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/poster_image4"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movie_title4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="The Illusionist"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/movie_category4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="80s Magical"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/description4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Description Description Desc Description Description"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pricingSection4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infoSection4">
+
+                        <TextView
+                            android:id="@+id/time4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="2hr 30 min" />
+
+                        <TextView
+                            android:id="@+id/price4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time4"
+                            android:layout_marginRight="15dp"
+                            android:text="Price: " />
+
+                        <TextView
+                            android:id="@+id/movie_by4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time4"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/price4"
+                            android:text="By:" />
+
+                        <TextView
+                            android:id="@+id/rating4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time4"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/movie_by4"
+                            android:text="Rating:" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/movielistitem">
+
+                    <ImageView
+                        android:id="@+id/poster_image5"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="Property Image"
+                        android:src="@drawable/frozen2"
+                        android:background="#000000"/>
+
+                    <LinearLayout
+                        android:id="@+id/infoSection5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/poster_image5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movie_title5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="1dp"
+                            android:text="The Illusionist"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/movie_category5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="80s Magical"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:id="@+id/description5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Description Description Desc Description Description"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pricingSection5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/infoSection5">
+
+                        <TextView
+                            android:id="@+id/time5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="2hr 30 min" />
+
+                        <TextView
+                            android:id="@+id/price5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time5"
+                            android:layout_marginRight="15dp"
+                            android:text="Price: " />
+
+                        <TextView
+                            android:id="@+id/movie_by5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time5"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/price5"
+                            android:text="By:" />
+
+                        <TextView
+                            android:id="@+id/rating5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/time5"
+                            android:layout_marginRight="15dp"
+                            android:layout_toRightOf="@id/movie_by5"
+                            android:text="Rating:" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
